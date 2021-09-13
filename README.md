@@ -11,11 +11,11 @@ My collection of basic scripts and app samples built on top of [8x8 CPaaS](https
 
 In this repository, I'm collecting some of the scripts, apps and code samples I've built to demonstrate the capabilities of [8x8 CPaaS](https://developer.8x8.com/). There's much more on my hard drive, but these simple examples should help you understand the structure of the SDKs/APIs and build more complex applications.
 
-* sms-simple-2-way: 
-* whatsapp-airline-simple-2-way
-* automation-ping-pong 
-* automation-sms-menu
-* jaas-virtual-events
+* **sms-simple-2-way**: Using the 8x8 SMS API to send and receive text messages
+* **whatsapp-airline-simple-2-way**: An airline bot service for customer care over WhatsApp
+* **automation-ping-pong**: Using the Automation API for simple SMS auto-reply
+* **automation-sms-menu**: Auto-reply SMS service that digests user input answers  
+* **jaas-virtual-events**: simulating a virtual events page using Jitsi as a Service
 
 ## SDKs and APIs Covered
 
@@ -34,7 +34,7 @@ For SMS, ChatApps/WhatsApp and Automation API
 
 For Jitsi as a Service
 
-1. Create a 8x8 JaaS Account ([here](https://connect.8x8.com/login/signup))
+1. Create a 8x8 JaaS Account ([here](https://jaas.8x8.vc/signup))
 2. During sign-up, choose Dev Tier for free usage up to 25 MAUs.
 
 ## Future Updates
