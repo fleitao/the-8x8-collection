@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Jumpin Events</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/jumpin_favicon.png">
+
+</head>
+
+<body>
+    <p style="text-align:left;"><img src="./images/jumpin_logo.png" height="113" width="200"></p>
+    <div align="top" id="header">
+        <img src="./images/page_header.png" height="50" width="1350">
+    </div>
+
+    <div id="header">
+        <img align="left" src="./images/page_left.png" height="650" width="65">
+        <img align="right" src="./images/page_right.png" height="650" width="300">
+    </div>
+
+    <script src="https://8x8.vc/libs/external_api.min.js"></script>;
+    <script>
+        var domain = "8x8.vc";
+        var options = {
+            roomName: "my_vpaas_magic_cookie",
+            width: 950,
+            height: 600,
+            jwt: "my_jwt",
+            configOverwrite: {
+                autoCaptionOnRecord: true,
+                prejoinPageEnabled: false
+            }
+        }
+        var api = new JitsiMeetExternalAPI(domain, options);
+
+    </script>
+
+</body>
+
+</html>
