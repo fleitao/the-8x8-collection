@@ -9,20 +9,27 @@ My basic collection of scripts, examples and app samples built on top of [8x8 CP
 
 ## Content
 
-_placeholder_
+In this repository, I'm collecting some of the scripts, apps and code samples I've built to demonstrate the capabilities of [8x8 CPaaS](https://developer.8x8.com/). There's much more on my hard drive, but these simple examples should help you understand the structure of the SDKs/APIs and build more complex applications.
 
 ## SDKs and APIs Covered
 
-_placeholder_
+* [8x8 SMS API](https://developer.8x8.com/connect/reference/getting-started-with-sms-api)
+* [8x8 ChatApps API](https://developer.8x8.com/connect/reference/getting-started-with-chatapps-api)
+* [8x8 Automation API](https://developer.8x8.com/connect/reference/getting-started-with-automation-api)
+* [8x8 Jitsi as a Service](https://developer.8x8.com/jaas/docs/jaas-onboarding)
 
-## Dependencies
+## Basic Requirements 
 
-_placeholder_
+For SMS, ChatApps/WhatsApp and Automation API
 
-## Getting Started
+1. Create a 8x8 Connect Account ([here](https://connect.8x8.com/login/signup))
+2. Reach out to your Account Manager for testing credit and a test SMS number
+3. Reach out to your Account Manager for testing credit and WhatsApp Sandbox activation (only applicable if testing the ChatApps API)
 
-_placeholder_
+For Jitsi as a Service
 
+1. Create a 8x8 JaaS Account ([here](https://connect.8x8.com/login/signup))
+2. During sign-up, choose Dev Tier for free usage up to 25 MAUs.
 
 
 \* _8x8 logo and brand are property of 8x8, Inc. Learn more in https://www.8x8.com/about-us/media-kit_

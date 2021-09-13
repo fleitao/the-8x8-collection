@@ -9,11 +9,18 @@ axios.post('https://sms.8x8.com/api/v1/subaccounts/' + mySubAccountID + '/messag
     source: my8x8Nymber,
     destination: process.argv[2],
     text: process.argv[3]
+
 }, {
     headers: {
         'Authorization': 'Bearer ' + myAPIkey,
         'Content-Type': 'application/json',
     },
+
 }).then(res => {
     console.log(res.data)
+
+}).catch(error => {
+    console.log(error.response.data);
+    console.log(error.response.status);
+    console.log(error.response.headers);
 });
