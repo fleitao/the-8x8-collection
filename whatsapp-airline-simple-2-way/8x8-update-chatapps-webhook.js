@@ -1,16 +1,14 @@
 const axios = require('axios')
+const config = require('./connect.json');
 
-var myAccountID = 'YOUR_8X8_ACCOUNTID'
-var myAPIkey = 'YOUR_8X8_APIKEY'
-
-axios.post('https://chatapps.8x8.com/api/v1/accounts/' + myAccountID + '/webhooks',
+axios.post('https://chatapps.8x8.com/api/v1/accounts/' + config.accountID + '/webhooks',
            [{
-            subAccountId: process.argv[2],
+            subAccountId: config.subAccountID,
             type: 'MSG',
-            url: process.argv[3]
+            url: process.argv[2]
     }], {
             headers: {
-                'Authorization': 'Bearer ' + myAPIkey,
+                'Authorization': 'Bearer ' + config.apiToken,
                 'Content-Type': 'application/json',
             },
         })

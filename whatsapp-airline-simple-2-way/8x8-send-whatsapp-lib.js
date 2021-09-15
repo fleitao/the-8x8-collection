@@ -1,11 +1,9 @@
 const axios = require('axios')
-
-var mySubAccountID = 'YOUR_8X8_SUBACCOUNTID'
-var myAPIkey = 'YOUR_8X8_APIKEY'
+const config = require('./connect.json');
 
 function sendWA(dest, source, text) {
 
-    axios.post('https://chatapps.8x8.com/api/v1/subaccounts/' + mySubAccountID + '/messages', {
+    axios.post('https://chatapps.8x8.com/api/v1/subaccounts/' + config.subAccountID + '/messages', {
         user: {
             msisdn: dest
         },
@@ -29,7 +27,7 @@ function sendWA(dest, source, text) {
         ]
     }, {
         headers: {
-            'Authorization': 'Bearer ' + myAPIkey,
+            'Authorization': 'Bearer ' + config.apiToken,
             'Content-Type': 'application/json',
         },
     }).then(res => {
@@ -47,3 +45,4 @@ function sendWA(dest, source, text) {
 module.exports = {
     sendWA
 };
+~

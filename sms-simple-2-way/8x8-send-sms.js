@@ -1,18 +1,15 @@
 const axios = require('axios')
+const config = require('./connect.json');
 
-var mySubAccountID = 'YOUR_8X8_SUBACCOUNTID'
-var myAPIkey = 'YOUR_8X8_APIKEY'
-var my8x8Nymber = 'YOUR_8X8_NUMBER'
+axios.post('https://sms.8x8.com/api/v1/subaccounts/' + config.subAccountID + '/messages', {
 
-axios.post('https://sms.8x8.com/api/v1/subaccounts/' + mySubAccountID + '/messages', {
-
-    source: my8x8Nymber,
+    source: config.number,
     destination: process.argv[2],
     text: process.argv[3]
 
 }, {
     headers: {
-        'Authorization': 'Bearer ' + myAPIkey,
+        'Authorization': 'Bearer ' + config.apiToken,
         'Content-Type': 'application/json',
     },
 

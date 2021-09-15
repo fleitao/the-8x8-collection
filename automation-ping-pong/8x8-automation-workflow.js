@@ -1,12 +1,9 @@
 const axios = require('axios')
+const config = require('./connect.json');
 
-var myAccountID = 'YOUR_8X8_ACCOUNTID'
-var mySubAccountID = 'YOUR_8X8_SUBACCOUNTID'
-var myAPIkey = 'YOUR_8X8_APIKEY'
+axios.post('https://automation.8x8.com/api/v1/accounts/' + config.accountID + '/definitions', {
 
-axios.post('https://automation.8x8.com/api/v1/accounts/' + myAccountID + '/definitions', {
-
-    subAccountId: mySubAccountID,
+    subAccountId: config.subAccountID,
     trigger: 'inbound_sms',
     definition: {
         name: 'Simple Autoreply SMS',
@@ -15,7 +12,7 @@ axios.post('https://automation.8x8.com/api/v1/accounts/' + myAccountID + '/defin
                 id: 'auto_reply_sms_1',
                 stepType: 'SMS',
                 inputs: {
-                    subAccountId: mySubAccountID,
+                    subAccountId: config.subAccountID,
                     destination: '{{data.payload.source}}',
                     source: '{{data.payload.destination}}',
                     text: 'Pong'
@@ -26,7 +23,7 @@ axios.post('https://automation.8x8.com/api/v1/accounts/' + myAccountID + '/defin
 
 }, {
     headers: {
-        'Authorization': 'Bearer ' + myAPIkey,
+        'Authorization': 'Bearer ' + config.apiToken,
         'Content-Type': 'application/json',
     },
 
