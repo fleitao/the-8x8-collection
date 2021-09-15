@@ -87,11 +87,11 @@ You should be ready to try the app now. Lets test this out in the following orde
 Send a message to your sandbox or WhatsApp number that starts with ```hello airline```. You should see the message coming into your bash prompt and as response you should see the "bot" replying with the following menu:
 
 ```
-✈️ Airline ChatBot 🤖" +
-How ya! 👋" +
-I am Airline's chatbot 🤖 and I'm here to help." +
-If needed, I can also put you in contact with a customer support agent (real human 👩)." +
-Are you having troubles with your booking ✈️, ticket 🎟️, or anything else I could help you with?")
+✈️ Airline ChatBot 🤖
+How ya! 👋
+I am Airline's chatbot 🤖 and I'm here to help.
+If needed, I can also put you in contact with a customer support agent (real human 👩).
+Are you having troubles with your booking ✈️, ticket 🎟️, or anything else I could help you with?
 ```
 
 ## Send a message to your phone
@@ -103,6 +103,8 @@ At any time you can simulate a real human agent jumpin into the conversation by 
 # See It In Action
 
 If you are having troubles with the setup, I've recorded a video where I'm walking through this example. To watch it, simply click on the picture/link below:
+
+[![whatsapp](https://user-images.githubusercontent.com/1263224/133450664-b1c2a781-19cb-4d2c-a027-5d84194ad07d.png)](https://youtu.be/pm-HVy2tBOI)
 
 
 
