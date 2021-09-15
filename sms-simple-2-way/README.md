@@ -91,6 +91,7 @@ Once the message gets into your phone simply reply back and you'll see it coming
 
 If you are having troubles with the setup, I've recorded a video where I'm walking through this example. To watch it, simply click on the picture/link below:
 
+[![smsscript](https://user-images.githubusercontent.com/1263224/133445117-f9d463a2-1459-40de-9fd8-e63ffbf69d38.png)](https://youtu.be/_ekdVTkSkyM)
 
 
 
